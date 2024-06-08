@@ -2,20 +2,30 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    CheckLength("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit. Viverra mauris in aliquam sem. Arcu felis bibendum ut tristique et egestas quis. Pretium fusce id velit ut tortor pretium viverra suspendisse. Arcu cursus vitae congue mauris rhoncus aenean vel elit. In nisl nisi scelerisque eu ultrices. Mattis enim ut tellus elementum sagittis vitae et leo duis. In massa tempor nec feugiat. Feugiat nibh sed pulvinar proin. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Scelerisque eu ultrices vitae auctor eu augue ut. Ac turpis egestas integer eget aliquet nibh praesent tristique. Viverra suspendisse potenti nullam ac tortor. Tortor id aliquet lectus proin. Dictum non consectetur a erat nam at lectus urna duis. Dui vivamus arcu felis bibendum ut tristique et egestas.");
-    CheckLength("Massa vitae tortor condimentum lacinia quis vel eros donec ac.");
-    CheckLength("Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris.");
+    hurricane(152);
+    hurricane(97.913);
+    hurricane(70.55);
+    hurricane(175.99);
     }
-  public static void CheckLength(string message){
-    int messLen=message.Length;
-    int Accepted=messLen-140;
-    if(Accepted>0){
-      Console.WriteLine("Rejected");
-      }
-      else{
-      Console.WriteLine("Posted");
-      }
-    
+  public static void hurricane (double Catagory){
+    if(Catagory>157){
+      Console.WriteLine("Catagory Five hurricane");
+    }
+    else if(Catagory<156&&Catagory>130){
+      Console.WriteLine("Catagory Four hurricane");
+    }
+    else if(Catagory<129&&Catagory>111){
+      Console.WriteLine("Catagory three hurricane");
+    }
+    else if(Catagory<110&&Catagory>96){
+      Console.WriteLine("Catagory two hurricane");
+    }
+    else if(Catagory<95&&Catagory>74){
+    Console.WriteLine("Catagory one hurricane");
+    }
+    else{
+      Console.WriteLine("Not a hurricane");
+    }
     }
   }
 
