@@ -2,29 +2,17 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    hurricane(152);
-    hurricane(97.913);
-    hurricane(70.55);
-    hurricane(175.99);
+  Perfect(496);
+  Perfect(68);
+  Perfect(5112);
+  Perfect(8128);
     }
-  public static void hurricane (double Catagory){
-    if(Catagory>157){
-      Console.WriteLine("Catagory Five hurricane");
+  public static void Perfect (double number){// this will take all numbers from 1-1000 that are perfect
+    if(number== 6||number== 28||number== 496||number== 8128){
+      Console.WriteLine("Perfect Number");
     }
-    else if(Catagory<156&&Catagory>130){
-      Console.WriteLine("Catagory Four hurricane");
-    }
-    else if(Catagory<129&&Catagory>111){
-      Console.WriteLine("Catagory three hurricane");
-    }
-    else if(Catagory<110&&Catagory>96){
-      Console.WriteLine("Catagory two hurricane");
-    }
-    else if(Catagory<95&&Catagory>74){
-    Console.WriteLine("Catagory one hurricane");
-    }
-    else{
-      Console.WriteLine("Not a hurricane");
+    else{//this shows the result if not the four perfect numebrs
+      Console.WriteLine("Not A Perfect Number");
     }
     }
   }
